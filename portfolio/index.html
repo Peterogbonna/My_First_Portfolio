@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <!-- Corrected charset to lowercase utf-8 -->
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Peter Ogbonna - Portfolio</title>
+    <!-- Corrected title to include "Personal" -->
+    <title>Peter Ogbonna - Personal Portfolio</title>
     <!-- You can add CSS links here later if you create a stylesheet -->
     <style>
         /* Basic styling for readability - you'll likely move this to a separate CSS file later */
@@ -21,17 +23,21 @@
             padding: 1rem 0;
             text-align: center;
         }
+        nav { /* Styles for the nav container itself */
+            background: #444;
+            padding: 10px 0;
+        }
         nav ul {
             padding: 0;
             list-style: none;
             text-align: center;
-            background: #444;
+            margin: 0; /* Added margin: 0 to remove default ul margin */
         }
         nav ul li {
             display: inline;
             margin-right: 20px;
         }
-        nav ul li {
+        nav ul li a {
             color: #fff;
             text-decoration: none;
             padding: 10px 15px;
@@ -81,82 +87,82 @@
 <body>
 
     <!-- Header Section -->
-     <header>
+    <header>
         <h1>Peter Ogbonna</h1>
         <p>Aspiring Software Engineer & Web Developer</p>
-     </header>
+    </header>
 
-     <!-- Navigation Bar -->
-      <nav>
+    <!-- Navigation Bar - Moved outside header as per strict interpretation of task order -->
+    <nav>
         <ul>
             <li><a href="#introduction">Introduction</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#about">About Me</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
-      </nav>
-      
-      <!-- Introduction Section -->
-       <section id="Introduction">
-            <h2>Introduction</h2>
-            <p>Hello! I'm Peter Ogbonna, a passionate and dedicated learner currently undergoing the ALX Software Engineering program. I am driven by a desire to build impactful web applications and solve real-world problems through code. My journey so far has equipped me with foundational skills in Git, GitHub, command-line interfaces, and JavaScript, and I'm excited to expand my expertise into front-end development with HTML, CSS, and beyond.</p>
-       </section>
+    </nav>
 
-       <!-- Projects Section -->
-        <section id="projects">
-            <h2>Projects</h2>
+    <!-- Introduction Section -->
+    <section id="introduction">
+        <h2>Introduction</h2>
+        <p>Hello! I'm Peter Ogbonna, a passionate and dedicated learner currently undergoing the ALX Software Engineering program. I am driven by a desire to build impactful web applications and solve real-world problems through code. My journey so far has equipped me with foundational skills in Git, GitHub, command-line interfaces, and JavaScript, and I'm excited to expand my expertise into front-end development with HTML, CSS, and beyond.</p>
+    </section>
 
-            <article class="project">
-                <h3>Git & GitHub Fundamentals</h3>
-                <p>A series of practical exercises demonstrating mastery of Git commands (init, add, commit, push, pull) and collaborative workflows, including branching, merging, and conflict resolution. This project solidified my understanding of version control.</p>
-                <a href="https://github.com/Peterogbonna/JS-Fundamentals" target="_blank">View Project on GitHub</a>
-            </article>
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
 
-            <article class="project">
-                <h3>JavaScript Basic Scripts</h3>
-                <p>Collection of small JavaScript scritps covering fundamental concepts such as variable declaration, data types, command-line arguments, loops, and basic function definitions. These exercises were crucial for building a strong programming foundation.</p>
-                <a href="https://github.com/Peterogbonna/JS-Fundamentals" target="_blank">View Project on GitHub</a>
-            </article>
+        <article class="project">
+            <h3>Git & GitHub Fundamentals</h3>
+            <p>A series of practical exercises demonstrating mastery of Git commands (init, add, commit, push, pull) and collaborative workflows, including branching, merging, and conflict resolution. This project solidified my understanding of version control.</p>
+            <a href="https://github.com/Peterogbonna/JS-Fundamentals" target="_blank">View Project on GitHub</a>
+        </article>
 
-            <!-- Add more projects here as you complete them -->
+        <article class="project">
+            <h3>JavaScript Basic Scripts</h3>
+            <p>Collection of small JavaScript scripts covering fundamental concepts such as variable declaration, data types, command-line arguments, loops, and basic function definitions. These exercises were crucial for building a strong programming foundation.</p>
+            <a href="https://github.com/Peterogbonna/JS-Fundamentals" target="_blank">View Project on GitHub</a>
+        </article>
 
-        </section>
-        
-        <!-- About Me Section -->
-         <section id="about">
-            <h2>About Me</h2>
-            <p>I am a curious and persistent individual, always eager to learn new technologies and improve my problem-abilities. My background includes a strong interest in logical thinking and attention to detail, which I apply to my coding endeavors.</p>
-            <h3>Skills:</h3>
-            <ul>
-                <li><strong>Version Control:</strong> Git, GitHub</li>
-                <li><strong>Programming Languages:</strong> JavaScript (fundamentals), C (basic)</li>
-                <li><strong>Command Line:</strong> Bash/CMD</li>
-                <li><strong>Web Technologies:</strong>HTML (basic)</li>
-            </ul>
-            <h3>Hobbies:</h3>
-            <ul>
-                <li>Reading tech blogs and articles</li>
-                <li>Solving coding challenges</li>
-                <li>Hiking and exploring nature</li>
-                <li>Cooking and experimenting with new recipes</li>
-            </ul>
-         </section>
+        <!-- Add more projects here as you complete them -->
 
-        <!-- Contact Section -->
-         <section id="contact">
-            <h2>Contact</h2>
-            <p>Feel free to reach out to me via email or connect on my professional networks:</p>
-            <ul>
-                <li>Email: <a href="mailto:peterogb067@gmail.com">peterogb067@gmail.com</a>(peterogb067@gmail.com)</li>
-                <li>LinkedIn: <a href="https://www.linkedin.com/in/peter-ogbonna-3169b5283" target="_blank">linkedin.com/in/peter-ogbonna-3169b5283</a></li>
-                <li>GitHub: <a href="https://github.com/Peterogbonna" target="_blank">github.com/Peterogbonna</a></li>
-            </ul>
-         </section>
+    </section>
 
-        <!-- Footer Section -->
-         <footer>
-            <p>&copy; 2024 Peter Ogbonna</p>
-         </footer>
+    <!-- About Me Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a curious and persistent individual, always eager to learn new technologies and improve my problem-solving abilities. My background includes a strong interest in logical thinking and attention to detail, which I apply to my coding endeavors.</p>
+        <h3>Skills:</h3>
+        <ul>
+            <li><strong>Version Control:</strong> Git, GitHub</li>
+            <li><strong>Programming Languages:</strong> JavaScript (fundamentals), C (basic)</li>
+            <li><strong>Command Line:</strong> Bash/CMD</li>
+            <li><strong>Web Technologies:</strong> HTML (basic)</li>
+        </ul>
+        <h3>Hobbies:</h3>
+        <ul>
+            <li>Reading tech blogs and articles</li>
+            <li>Solving coding challenges</li>
+            <li>Hiking and exploring nature</li>
+            <li>Cooking and experimenting with new recipes</li>
+        </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Feel free to reach out to me via email or connect on my professional networks:</p>
+        <ul>
+            <li>Email: <a href="mailto:peterogb067@gmail.com">peterogb067@gmail.com</a></li>
+            <li>LinkedIn: <a href="https://www.linkedin.com/in/peter-ogbonna-3169b5283" target="_blank">linkedin.com/in/peter-ogbonna-3169b5283</a></li>
+            <li>GitHub: <a href="https://github.com/Peterogbonna" target="_blank">github.com/Peterogbonna</a></li>
+        </ul>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Peter Ogbonna</p>
+    </footer>
 
 </body>
 </html>
